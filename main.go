@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/torikki-tou/fx-test/internal/fx_test"
+	"github.com/torikki-tou/fx-test/internal"
 )
 
 func main() {
-	fx_test.Run()
+	internal.Run()
 }

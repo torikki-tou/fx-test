@@ -1,17 +1,17 @@
-package fx_test
+package internal
 
 import (
 	"context"
-	"github.com/torikki-tou/fx-test/internal/fx_test/components/config"
-	"github.com/torikki-tou/fx-test/internal/fx_test/components/db"
-	"github.com/torikki-tou/fx-test/internal/fx_test/components/logger"
-	"github.com/torikki-tou/fx-test/internal/fx_test/components/server"
-	taskHandler "github.com/torikki-tou/fx-test/internal/fx_test/handlers/task"
-	userHandler "github.com/torikki-tou/fx-test/internal/fx_test/handlers/user"
-	taskRepository "github.com/torikki-tou/fx-test/internal/fx_test/repositories/task"
-	userRepository "github.com/torikki-tou/fx-test/internal/fx_test/repositories/user"
-	taskService "github.com/torikki-tou/fx-test/internal/fx_test/services/task"
-	userService "github.com/torikki-tou/fx-test/internal/fx_test/services/user"
+	taskHandler "github.com/torikki-tou/fx-test/internal/api/handlers/task"
+	userHandler "github.com/torikki-tou/fx-test/internal/api/handlers/user"
+	"github.com/torikki-tou/fx-test/internal/components/config"
+	"github.com/torikki-tou/fx-test/internal/components/db"
+	"github.com/torikki-tou/fx-test/internal/components/logger"
+	"github.com/torikki-tou/fx-test/internal/components/server"
+	taskRepository "github.com/torikki-tou/fx-test/internal/repositories/task"
+	userRepository "github.com/torikki-tou/fx-test/internal/repositories/user"
+	taskService "github.com/torikki-tou/fx-test/internal/services/task"
+	userService "github.com/torikki-tou/fx-test/internal/services/user"
 	"go.uber.org/fx"
 )
 
